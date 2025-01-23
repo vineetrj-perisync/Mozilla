@@ -1,0 +1,77 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body{
+   
+    font-family: "Mozilla Text", Inter, "Helvetica Neue", Arial, X-LocaleSpecific, sans-serif;
+    
+}
+
+.border2{
+    border: 1px solid white;
+}
+.bordert{
+    border-top: 1px solid rgb(50, 49, 49);
+}
+
+.poly {
+    position: relative;
+    height: 101px; 
+     
+}
+
+@supports (clip-path: polygon(50% 0%, 0% 100%, 100% 100%)) {
+    .poly:before {
+        bottom: 0;
+        clip-path: polygon(0 60%, 25% 60%, 25% 100%, 60% 100%, 60% 50%, 80% 50%, 80% 0, 0 0);
+        content: "";
+        display: block;
+        height: 81px; 
+        left: 0;
+        position: absolute;
+        right: 0;
+        top: -1px;
+        background-color: rgb(22,22,22); 
+    }
+}
+.poly1 {
+    position: relative;
+    height: 90px;
+}
+
+@supports (clip-path: polygon(50% 0%, 0% 100%, 100% 100%)) {
+    .poly1:before {
+        bottom: 0;
+        clip-path: polygon(0 60%, 25% 60%, 25% 100%, 60% 100%, 60% 50%, 80% 50%, 80% 0, 0 0);
+        content: "";
+        display: block;
+        height: 81px;
+        left: 0;
+        position: absolute;
+        right: 0;
+        top: -1px;
+        background-color: rgb(232,231,231);
+    }
+}
+
+.poly2 {
+    position: relative;
+    height: 90px;
+}
+
+@supports (clip-path: polygon(50% 0%, 0% 100%, 100% 100%)) {
+    .poly2:before {
+        bottom: 0;
+        clip-path: polygon(0 60%, 25% 60%, 25% 100%, 60% 100%, 60% 50%, 80% 50%, 80% 0, 0 0);
+        content: "";
+        display: block;
+        height: 81px;
+        left: 0;
+        position: absolute;
+        right: 0;
+        top: -1px;
+        background-color: white;
+    }
+}
+
